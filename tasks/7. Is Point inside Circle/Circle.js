@@ -11,7 +11,9 @@ export default function(center, radius) {
       return radius ** 2 * Math.PI;
     },
     includes(Point) {
-      // TODO: write your code here
+      // console.log(Point[0]);
+      return  ((Point.x-center.x)**2 + (Point.y-center.y)**2) <= radius**2;   
     }
   }
 }
+

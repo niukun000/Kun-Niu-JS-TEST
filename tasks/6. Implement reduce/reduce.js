@@ -1,3 +1,11 @@
 export function Reduce(array, reducer, initialValue) {
-  // TODO: write your code here
+
+  var result = initialValue;
+
+  for (let i=0; i<array.length; i++){
+    result = reducer(result, array[i]);
+  }
+  return result;
+  
 }
+console.log(Reduce([]))

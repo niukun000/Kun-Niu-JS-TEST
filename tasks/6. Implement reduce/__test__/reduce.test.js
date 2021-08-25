@@ -8,7 +8,7 @@ describe('Reduce() function', () => {
     const array = [1, 2, 3, 4, 5];
     const reducer = (acc, curr) => acc += curr;
 
-    expect(Reduce(array, reducer, 0)).to.equal(15);
+    expect(Reduce(array, reducer, 1)).to.equal(16);
   });
 
   it('should work with strings', function() {
