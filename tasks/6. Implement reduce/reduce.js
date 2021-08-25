@@ -8,4 +8,3 @@ export function Reduce(array, reducer, initialValue) {
   return result;
   
 }
-console.log(Reduce([]))
