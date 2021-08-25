@@ -6,7 +6,7 @@ describe('getFibonacciUntil() function', () => {
 
     const result = getFibonacciUntil(7).toString();
     const expected = '0,1,1,2,3,5,8';
-
+    console.log(result);
     expect(result).to.equal(expected);
   });
 });

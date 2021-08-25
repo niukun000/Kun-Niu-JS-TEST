@@ -4,17 +4,12 @@ export function areParenthesesBalanced(inputString) {
   for (let i=0; i <= inputString.length; i++){
     if (right>left){
       return false
-    }
-    else if (inputString[i] == "("){
+    } else if (inputString[i] == "("){
         left++;  
-    }
-    else if (inputString[i]==")"){
+    } else if (inputString[i]==")"){
         right++;
-    }
-    
-    }        
-  
-
+    } 
+  }        
   if (left==right){
     return true;
   }

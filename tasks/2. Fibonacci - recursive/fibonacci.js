@@ -1,17 +1,13 @@
-export function fib(n) {
+export function getFibonacciUntil(n) {
   var result = [];
-  function fibonacci(n){
-    if (n == 0){      
-     return 0;
-    } else if (n == 1) {
+  for (let i=0; i<n; i++){
+    if (i==0){
       result.push(0);
-      return 0
-    } else if (n == 2) {
-      result.push()
-    }else return fibonacci
+    } else if(i==1){
+      result.push(1);
+    } else {
+      result.push(result[i-1]+result[i-2]);
+    }
   }
-  
-  const arr = fib(n - 1)
-  return [...arr, arr[n-1] + arr[n-2]]
+  return result;  
 }
-console.log(fib(7));

@@ -10,10 +10,8 @@ export function encryptCaesar(inputString, key) {
     if (index>26){
       index-=26;
     }
-    result = result+alphabets[index];
-    
+    result = result+alphabets[index];   
   }
   return result;
 }
-
 console.log(encryptCaesar("A", 2));
